@@ -1,0 +1,18 @@
+{
+  "name": "crypto-prices-auth",
+  "version": "0.0.1",
+  "description": "An authenticated API to check BTC, ETH and BNB prices.",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "run": "node src/server.js"
+  },
+  "author": "Animesh-Ghosh",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
