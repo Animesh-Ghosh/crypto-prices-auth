@@ -7,13 +7,11 @@ function validateUsernameAndPassword(req, res, next) {
 		errors.push('password is required')
 	}
 	if (errors.length) {
-		res.status(400)
+		return res.status(400)
 		.json({
 			'message': 'Validation error',
 			errors
 		})
-
-		return next('router')
 	}
 
 	next()

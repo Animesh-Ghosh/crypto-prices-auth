@@ -12,7 +12,7 @@ const instance = axios.create({
 async function getCryptoPrice(crypto = 'btc', target = 'usd') {
 	let cryptoPrice = -1
 	try {
-		const response = await instance.get(`/ticker/${crypto}-${target}`)
+		const response = await instance.get(`/ticker/${crypto.toLowerCase()}-${target.toLowerCase()}`)
 		cryptoPrice = Number(response.data.ticker.price)
 	} catch (err) {
 		console.error(err)
